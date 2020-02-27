@@ -16,7 +16,6 @@ export default function(state = initialState, action) {
         ],
       };
     case TODO_ITEMS_FETCHED:
-      console.log(action.payload);
       return {
         ...state,
         allTodoItems: action.payload,
