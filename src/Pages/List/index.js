@@ -5,6 +5,8 @@ import TodoInput from './Components/TodoInput';
 import FetchListItemButton from './Components/FetchListItemButton';
 import { fetchTodos } from '../../shared/actions';
 import { connect } from 'react-redux';
+import { filteredTodos } from './selectors';
+import FilterTodos from './Components/FilterTodos';
 
 class TodoList extends React.PureComponent {
   componentDidMount() {
@@ -26,6 +28,7 @@ class TodoList extends React.PureComponent {
           </ListGroup>
           <FetchListItemButton />
           <TodoInput />
+          <FilterTodos />
         </div>
       </div>
     );
@@ -33,7 +36,7 @@ class TodoList extends React.PureComponent {
 }
 
 const mapStateToProps = state => ({
-  allTodos: state.todo.allTodoItems,
+  allTodos: filteredTodos(state),
 });
 
 export default connect(mapStateToProps, { fetchTodos })(TodoList);

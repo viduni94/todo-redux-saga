@@ -1,8 +1,9 @@
-import { ADD_TODO_ITEM, LIST_ITEM_RECEIVED } from "./actionTypes";
+import { ADD_TODO_ITEM, LIST_ITEM_RECEIVED, SET_SEARCH_TERM } from "./actionTypes";
 import { TODO_ITEMS_FETCHED } from '../../shared/actionTypes';
 
 const initialState = {
   allTodoItems: [],
+  searchTerm: '',
 };
 
 export default function(state = initialState, action) {
@@ -20,6 +21,11 @@ export default function(state = initialState, action) {
         ...state,
         allTodoItems: action.payload,
       };
+    case SET_SEARCH_TERM:
+      return {
+        ...state,
+        searchTerm: action.payload,
+      }
     default:
       return state;
   }
