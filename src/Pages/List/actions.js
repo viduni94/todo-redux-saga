@@ -1,6 +1,5 @@
 import {
   ADD_TODO_ITEM,
-  FETCH_TODO_ITEMS,
   FETCH_LIST_ITEM,
 } from "./actionTypes";
 
@@ -8,16 +7,6 @@ import {
 export const addTodoItem = todoInfo => ({
   type: ADD_TODO_ITEM,
   payload: todoInfo,
-});
-
-// Fetch todos
-export const fetchTodos = () => ({
-  type: FETCH_TODO_ITEMS,
-  payload: [
-    'List item 1',
-    'List item 2',
-    'List item 3',
-  ],
 });
 
 // Fetch list item from API

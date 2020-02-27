@@ -1,4 +1,5 @@
-import { ADD_TODO_ITEM, FETCH_TODO_ITEMS, LIST_ITEM_RECEIVED } from "./actionTypes";
+import { ADD_TODO_ITEM, LIST_ITEM_RECEIVED } from "./actionTypes";
+import { TODO_ITEMS_FETCHED } from '../../shared/actionTypes';
 
 const initialState = {
   allTodoItems: [],
@@ -14,7 +15,8 @@ export default function(state = initialState, action) {
           ...state.allTodoItems, action.payload,
         ],
       };
-    case FETCH_TODO_ITEMS:
+    case TODO_ITEMS_FETCHED:
+      console.log(action.payload);
       return {
         ...state,
         allTodoItems: action.payload,
