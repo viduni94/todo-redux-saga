@@ -4,13 +4,13 @@ import { Button } from 'reactstrap';
 import { connect } from 'react-redux';
 
 const FetchListItemButton = ({ fetchListItem }) => {
-  const fetchTodoText = () => { 
+  const fetchTodoText = () => {
     fetchListItem();
   }
 
   return (
     <div style={{ paddingTop: '45px' }}>
-      <Button color="secondary" onClick={fetchTodoText}>Fetch List Item</Button>
+      <Button color="primary" onClick={fetchTodoText}>Fetch List Item from API</Button>
     </div>
   );
 }

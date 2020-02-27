@@ -4,8 +4,6 @@ import "regenerator-runtime/runtime";
 import rootReducer from "./rootReducer";
 import rootSaga from './Pages/List/sagas';
 
-console.log(rootSaga);
-
 const initialState = {};
 
 const sagaMiddleware = createSagaMiddleware();
