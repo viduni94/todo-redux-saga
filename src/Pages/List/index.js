@@ -16,7 +16,6 @@ class TodoList extends React.PureComponent {
 
   render() {
     const { allTodos } = this.props;
-
     return (
       <div className="container" style={{ height: '79vh' }}>
         <div className="list">
@@ -35,8 +34,11 @@ class TodoList extends React.PureComponent {
   }
 }
 
-const mapStateToProps = state => ({
-  allTodos: filteredTodos(state),
-});
+const mapStateToProps = state => {
+  const todoState = state.todo.toJS();
+  return ({
+    allTodos: filteredTodos(todoState),
+  })
+};
 
 export default connect(mapStateToProps, { fetchTodos })(TodoList);

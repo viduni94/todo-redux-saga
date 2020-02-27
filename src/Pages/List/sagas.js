@@ -7,7 +7,6 @@ function* fetchListItemText() {
   const response = yield axios.get(`https://reqres.in/api/users/${generatedId}`);
   const { data } = response.data || {};
   const listItemText = data ? `${data.first_name} ${data.last_name}` : '';
-  
   yield put({ type: LIST_ITEM_RECEIVED, payload: listItemText });
 }
 
