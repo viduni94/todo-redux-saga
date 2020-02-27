@@ -1,4 +1,8 @@
-import { ADD_TODO_ITEM, FETCH_TODO_ITEMS } from "./events";
+import {
+  ADD_TODO_ITEM,
+  FETCH_TODO_ITEMS,
+  FETCH_LIST_ITEM,
+} from "./actionTypes";
 
 // Add to do item
 export const addTodoItem = todoInfo => ({
@@ -7,7 +11,7 @@ export const addTodoItem = todoInfo => ({
 });
 
 // Fetch todos
-export const fetchTodos = todoInfo => ({
+export const fetchTodos = () => ({
   type: FETCH_TODO_ITEMS,
   payload: [
     'List item 1',
@@ -16,4 +20,9 @@ export const fetchTodos = todoInfo => ({
     'List item 4',
     'List item 5',
   ],
+});
+
+// Fetch list item from API
+export const fetchListItem = () => ({
+  type: FETCH_LIST_ITEM,
 });

@@ -1,4 +1,4 @@
-import { ADD_TODO_ITEM, FETCH_TODO_ITEMS } from "./events";
+import { ADD_TODO_ITEM, FETCH_TODO_ITEMS, LIST_ITEM_RECEIVED } from "./actionTypes";
 
 const initialState = {
   allTodoItems: [],
@@ -7,6 +7,7 @@ const initialState = {
 export default function(state = initialState, action) {
   switch (action.type) {
     case ADD_TODO_ITEM:
+    case LIST_ITEM_RECEIVED:
       return {
         ...state,
         allTodoItems: [

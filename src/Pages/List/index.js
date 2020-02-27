@@ -2,6 +2,7 @@ import React from 'react';
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import TodoHeader from './Components/TodoHeader';
 import TodoInput from './Components/TodoInput';
+import FetchListItemButton from './Components/FetchListItemButton';
 import { fetchTodos } from './actions';
 import { connect } from 'react-redux';
 
@@ -23,6 +24,7 @@ class TodoList extends React.PureComponent {
               <ListGroupItem key={i}>{todo}</ListGroupItem>
             ))}
           </ListGroup>
+          <FetchListItemButton />
           <TodoInput />
         </div>
       </div>
