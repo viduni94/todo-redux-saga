@@ -1,4 +1,4 @@
-import { put, takeLatest, all } from 'redux-saga/effects';
+import { put, takeLatest } from 'redux-saga/effects';
 import axios from 'axios';
 import { FETCH_LIST_ITEM, LIST_ITEM_RECEIVED } from './actionTypes';
 
@@ -11,10 +11,6 @@ function* fetchListItemText() {
   yield put({ type: LIST_ITEM_RECEIVED, payload: listItemText });
 }
 
-function* actionWatcher() {
-  yield takeLatest(FETCH_LIST_ITEM, fetchListItemText)
-}
-
-export default function* rootSaga() {
-  yield all([actionWatcher()]);
+export default function* actionWatcher() {
+  yield takeLatest(FETCH_LIST_ITEM, fetchListItemText);
 }
