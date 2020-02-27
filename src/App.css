@@ -1,0 +1,289 @@
+/* @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"); */
+
+.list {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.login {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 86.7vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
+}
+
+.login-inner {
+  padding-top: 80px;
+}
+
+.dark-overlay {
+  background-color: rgba(11, 195, 228, 0.877);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+.btn-login {
+  background-color: darkblue;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-login:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: bold;
+}
+
+.btn-normal {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn-normal:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: bold;
+}
+
+.btn-logout {
+  background-color: transparent;
+  color: rgb(177, 177, 177);
+  font-weight: bold;
+}
+
+.btn-logout:hover {
+  background-color: transparent;
+  color: rgb(35, 213, 226);
+  font-weight: bold;
+}
+
+/* Menu CSS */
+#mu-restaurant-menu {
+  float: left;
+  width: 100%;
+  padding: 5px 0;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area {
+  float: left;
+  width: 100%;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content {
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li {
+  display: inline-block;
+  float: none;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  border-radius: 0;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 15px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-bottom: -1px;
+  border: 1px solid transparent;
+  border-color: #3498db #3498db transparent;
+  text-decoration: none;
+}
+
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu a.active,
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu .active a:hover,
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu .active a:focus {
+  background-color: #fff;
+  color: #3498db;
+  border-color: #3498db #3498db transparent;
+  border-bottom-color: transparent;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area {
+  float: left;
+  width: 100%;
+  padding: 50px 0;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-tab-content-left {
+  float: left;
+  padding-right: 15px;
+  width: 100%;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-tab-content-right {
+  float: left;
+  padding-left: 15px;
+  width: 100%;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li {
+  border-bottom: 1px dashed #ccc;
+  float: left;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  width: 100%;
+  list-style: none;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left {
+  width: 130px;
+  height: 130px;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left a img {
+  width: 110px;
+  height: 110px;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .media-heading {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .media-heading a {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .mu-menu-price {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+  margin-left: 20px;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body p {
+  margin-top: 5px;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu {
+  border-bottom: 1px solid #3498db;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li a {
+  background-color: #3498db;
+  padding: 10px 15px;
+  position: relative;
+  display: block;
+}
+
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li a:active,
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li a:hover,
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li a:focus {
+  background-color: #fff;
+  color: #3498db;
+  border-color: #3498db #3498db transparent;
+  border-bottom-color: transparent;
+}
+
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .media-heading a:hover,
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .media-heading a:focus {
+  color: #3498db;
+}
+#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .mu-menu-price {
+  color: #86898b;
+}
+
+.mu-title {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.mu-title .mu-subtitle {
+  font-size: 35px;
+  font-family: "Tangerine", cursive;
+  line-height: 30px;
+}
+.mu-title h2 {
+  color: #000;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+.custom-title {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+/* Order create CSS */
+@media only screen and (min-width: 600px) {
+  .create-order {
+    height: 78.9vh;
+    position: relative;
+  }
+}
+
+.custom-row {
+  margin-right: 0px !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .dashboard {
+    height: 78.9vh;
+    position: relative;
+  }
+}
+
+.custom-table {
+  overflow-x: auto;
+  overflow-y: auto;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+.custom-table-1 {
+  overflow-y: auto;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .custom-table {
+    height: 53vh;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .custom-table-1 {
+    height: 33vh;
+  }
+}
