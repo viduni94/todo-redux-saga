@@ -1,8 +1,8 @@
-import { Map, List } from 'immutable';
+import { List, fromJS } from 'immutable';
 import { ADD_TODO_ITEM, LIST_ITEM_RECEIVED, SET_SEARCH_TERM } from "./actionTypes";
 import { TODO_ITEMS_FETCHED } from '../../shared/actionTypes';
 
-const initialState = Map({
+const initialState = fromJS({
   allTodoItems: List([]),
   searchTerm: '',
 });
