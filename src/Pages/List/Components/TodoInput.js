@@ -4,8 +4,8 @@ import {
   InputGroupAddon,
   Input,
   Button,
- } from 'reactstrap';
- import { addTodoItem } from '../actions';
+} from 'reactstrap';
+import { addTodoItem } from '../actions';
 import { connect } from 'react-redux';
 
 const TodoInput = ({ addTodoItem }) => {

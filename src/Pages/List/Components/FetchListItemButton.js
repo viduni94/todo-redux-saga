@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
- import { fetchListItem } from '../actions';
+import { fetchListItem } from '../actions';
 import { connect } from 'react-redux';
 
 const FetchListItemButton = ({ fetchListItem }) => {
