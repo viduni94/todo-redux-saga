@@ -3,7 +3,8 @@ import axios from 'axios';
 import { FETCH_LIST_ITEM, LIST_ITEM_RECEIVED } from './actionTypes';
 
 function* fetchListItemText() {
-  const response = yield axios.get('https://reqres.in/api/users/2');
+  const generatedId = Math.floor(Math.random() * 12 + 1);
+  const response = yield axios.get(`https://reqres.in/api/users/${generatedId}`);
   const { data } = response.data || {};
   const listItemText = data ? `${data.first_name} ${data.last_name}` : '';
   

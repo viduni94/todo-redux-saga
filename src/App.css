@@ -1,8 +1,10 @@
 /* @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"); */
 
-.list {
+.list .list-group {
   padding-top: 20px;
   padding-bottom: 10px;
+  height: 52vh;
+  overflow-y: auto;
 }
 
 img {
