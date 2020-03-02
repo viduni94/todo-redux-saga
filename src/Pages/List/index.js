@@ -17,7 +17,6 @@ class TodoList extends React.PureComponent {
 
   render() {
     const { allTodos, isFetchingListItem } = this.props;
-    console.log("TodoList -> render -> isFetchingListItem", isFetchingListItem)
 
     return (
       <div className="container" style={{ height: '79vh' }}>
